@@ -7,21 +7,14 @@ const avengers = ['Hulk', 'Thor', 'Iron Man', 'Captain A.', 'Spiderman', 'Captai
 
 function findLongestWord(stringList) {
     let longestWord = [];
-    let anotherLongWord = longestWord.length; 
     for (let i = 0; i < stringList.length; i++) {
-        let word = stringList[i];
-
-      if (word.length > longestWord.length) {
-        longestWord = word;
-        console.log(word);
-      } else if (anotherLongWord === longestWord.length) {
-        console.log(anotherLongWord);
+      if (stringList[i].length > longestWord.length) {
+        longestWord = stringList[i];
       }
     }
+    return longestWord;
   }
 
   console.log(findLongestWord(avengers));
-
-  // He decidido dejar este ejercicio porque no consigo sacarlo y llevo como 3 horas con él
 
 
