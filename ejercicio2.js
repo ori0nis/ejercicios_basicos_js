@@ -2,7 +2,7 @@ const jedi = {nombre: "Luke Skywalker", edad: 19};
 
 // Tu código para cambiar la edad aquí...
 
-edad: 25;
+jedi.edad = 25;
 
 // 2. Presentación al estilo Leia Organa:
 
