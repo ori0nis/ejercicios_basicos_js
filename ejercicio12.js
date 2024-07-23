@@ -1,4 +1,3 @@
-
 /* Valores únicos: Crea una función que reciba por parámetro un array y compruebe si existen elementos duplicados, en caso que existan los elimina para retornar un array sin los elementos duplicados.
 
 Pista: puedes generar un nuevo array y devolverlo.
@@ -20,16 +19,18 @@ const duplicates = [
     'soda'
   ];
 
-    
+   
+
     function removeDuplicates(list) {
-        let duplicate = '';
+        
+        let uniqueElements = [];
+        
         for (let i = 0; i < list.length; i++) {
-            if (list[i] === list [i]) {
-                duplicate = list[i];
-                list.slice(duplicate, 1);
+            if (uniqueElements.indexOf(list[i]) === -1) {
+                uniqueElements.push(list[i]);
             }
         }
-        return duplicate;
+        return uniqueElements;
   }
 
-  removeDuplicates(duplicates);
+  console.log(removeDuplicates(duplicates));
