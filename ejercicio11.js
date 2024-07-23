@@ -9,6 +9,7 @@ const mixedElements = [6, 1, 'Marvel', 1, 'hamburguesa', '10', 'Prometeo', 8, 'H
 
 
 function averageWord(list) {
+  
   let totalSumNum = 0;
   let totalSumWord = 0;
 
