@@ -13,7 +13,7 @@ function averageWord(list) {
   let totalSumWord = 0;
 
   for (let i = 0; i < list.length; i++) {
-  if (typeof list[i] === 'number') {
+    if (typeof list[i] === 'number') {
         totalSumNum += list[i];
     } else if (typeof list[i] === 'string') {
       totalSumWord += list[i].length;
