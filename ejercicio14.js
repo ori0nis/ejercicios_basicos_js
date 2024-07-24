@@ -6,6 +6,7 @@ Podéis conformar el formato que queráis para la devolución del resultado siem
 
 Puedes usar este array para probar tu función:*/
 
+
 const words = [
     'code',
     'repeat',
@@ -19,20 +20,22 @@ const words = [
     'sleep',
     'code'
   ];
+  
 
   function repeatCounter(list) {
-    
-    let uniqueElements = [];
-    let repeatCount = [];
 
-    for (let i = 0; i < list.length; i++) {
-        if (uniqueElements.indexOf(list[i]) === -1) {
-            uniqueElements.push(list[i]);
-        } else if (uniqueElements.indexOf(list[i])) {
-            repeatCount.push(list[i]);
-            console.log(uniqueElements);
+    let totalCount = {};
+
+    for (let word of list) {
+        if (totalCount[word]) {
+            totalCount[word]++;
+        } else {
+            totalCount[word] = 1;
         }
     }
+    return totalCount;
   }
+    
 
   console.log(repeatCounter(words));
+
